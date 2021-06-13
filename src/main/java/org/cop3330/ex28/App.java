@@ -3,14 +3,6 @@ package org.cop3330.ex28;
 import java.util.Scanner;
 
 public class App {
-    // Only wrote this function because I have to unit test something
-    public static String generateTotalString(int[] nums) {
-        int sum = 0;
-        for (int num: nums)
-            sum += num;
-        return String.format("The total is %d.", sum);
-    }
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int[] nums = new int[5];
@@ -21,6 +13,7 @@ public class App {
             nums[i] = in.nextInt();
         }
 
-        System.out.println(generateTotalString(nums));
+        Sum s = new Sum(nums);
+        System.out.println(s);
     }
 }
