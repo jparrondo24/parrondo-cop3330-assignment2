@@ -6,7 +6,7 @@ public class MonthsCalculator {
     private double monthlyPayment;
     private int months;
 
-    private int calculateMonths() {
+    int calculateMonths() {
         return (int) Math.ceil((-1 / 30.0) * Math.log(1 + balance / monthlyPayment * (1 - Math.pow(1 + dailyRate, 30))) / Math.log(1 + dailyRate));
     }
 
