@@ -23,7 +23,7 @@ public class RateValidator {
         return true;
     }
 
-    private int calculateYears() {
+    public int calculateYears() {
         return (int) Math.ceil(72 / numericRate);
     }
 
