@@ -35,7 +35,7 @@ public class PasswordValidator {
         this.containsSpecialCharacters = containsSpecialCharacters;
     }
 
-    private int getPasswordStrength() {
+    int getPasswordStrength() {
         if (password.length() < 8) {
             if (containsNumbers && !(containsLetters || containsSpecialCharacters))
                 return VERY_WEAK;
@@ -52,7 +52,7 @@ public class PasswordValidator {
         return DECENT;
     }
 
-    private String mapIntStrengthToString(int strength) {
+    String mapIntStrengthToString(int strength) {
         String[] strengths = {"very weak", "weak", "decent", "strong", "very strong"};
         return strengths[strength];
     }
