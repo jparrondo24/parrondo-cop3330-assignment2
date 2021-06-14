@@ -14,7 +14,7 @@ public class PasswordGenerator {
     private int numbers;
     private String password;
 
-    private char pickRandom(ArrayList<Character> arr) {
+    char pickRandom(ArrayList<Character> arr) {
         int low = 0;
         int high = arr.size() - 1;
         int index = (int) (Math.random() * (high - low + 1) + low);
@@ -22,7 +22,7 @@ public class PasswordGenerator {
         return arr.get(index);
     }
 
-    private int pickRandomAndRemove(ArrayList<Integer> arr) {
+    int pickRandomAndRemove(ArrayList<Integer> arr) {
         int low = 0;
         int high = arr.size() - 1;
         int index = (int) (Math.random() * (high - low + 1) + low);

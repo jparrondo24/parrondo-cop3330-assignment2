@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class EvenFilter {
     private int[] list;
 
-    private int[] filterEvenNumbers(int[] arr) {
+    int[] filterEvenNumbers(int[] arr) {
         ArrayList<Integer> evensList = new ArrayList<>();
         for (int num : arr) {
             if (num % 2 == 0)
