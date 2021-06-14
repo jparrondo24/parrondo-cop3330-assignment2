@@ -12,7 +12,7 @@ public class AnagramChecker {
 
         for (int i = 0; i < str1.length(); i++) {
             char nextChar1 = str1.charAt(i);
-            char nextChar2 = str1.charAt(i);
+            char nextChar2 = str2.charAt(i);
 
             int prevVal1 = frequency1.getOrDefault(nextChar1, 0);
             int prevVal2 = frequency2.getOrDefault(nextChar2, 0);
